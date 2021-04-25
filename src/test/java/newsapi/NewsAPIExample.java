@@ -1,18 +1,21 @@
 package newsapi;
 
+import newsanalyzer.ctrl.BuildUrlException;
+import newsanalyzer.ctrl.NewsAnalyserException;
 import newsapi.beans.Article;
 import newsapi.beans.NewsReponse;
 import newsapi.enums.Category;
 import newsapi.enums.Country;
 import newsapi.enums.Endpoint;
 
+import java.io.IOException;
 import java.util.List;
 
 public class NewsAPIExample {
 
-    public static final String APIKEY = "myAPIKey";
+    public static final String APIKEY = "f7513866a61842a590badd54e6e35a92";
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws NewsAnalyserException, BuildUrlException, IOException {
 
         NewsApi newsApi = new NewsApiBuilder()
                 .setApiKey(APIKEY)
