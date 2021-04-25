@@ -1,4 +1,5 @@
 import newsanalyzer.ui.UserInterface;
+//https://github.com/Yddgrasil/NewsAnalyzer.git
 
 public class MCP {
 
